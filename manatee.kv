@@ -2,3 +2,22 @@
 
 MDScreen: 
 
+    MDCard:
+        size_hint: 1, 0.8
+        focus_behavior: True
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDBoxLayout:  
+            id: man_jokes
+            orientation: 'vertical' 
+            md_bg_color: 0.96, 1, 1, 1
+            
+    MDAnchorLayout:
+        anchor_x: 'left'
+        anchor_y: 'bottom'
+        padding: [10, 0, 0, 5]
+
+        MDFillRoundFlatIconButton:
+            icon: 'alpha-m-box'
+            text: "Manatee Joke"
+            on_release: app.jokes() 
