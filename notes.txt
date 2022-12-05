@@ -1,0 +1,14 @@
+Dependencies: 
+Using Python >= 3.9
+Create a virtual environment
+python -m venv [virtual environment name]
+Activate [bash]
+. [virtual environment name]/scripts/activate [Note that command poss diff on Mac]
+
+Install Kivy:
+
+python -m pip install "kivy[base]" kivy_examples
+
+Install KivyMD:
+
+python -m pip install kivymd 
